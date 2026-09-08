@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>作品集 — PDF 版</title>
+  <style>
+    /* A4 頁面設定 */
+    @page { size: A4; margin: 20mm }
+    body{font-family: "Noto Sans", "Inter", sans-serif; color:#111; margin:0}
+    .page{width:210mm;min-height:297mm;padding:20mm;background:white}
+    .header{display:flex;justify-content:space-between;align-items:center}
+    .title h1{margin:0;font-size:24px}
+    .lead{color:#555;margin-top:6px}
+    .hero-img{width:100%;height:150mm;object-fit:cover;border-radius:6px;margin:14px 0}
+    .section{margin-top:12px}
+    .two-col{display:flex;gap:12px}
+    .col{flex:1}
+    .meta{font-size:12px;color:#666}
+    .small{font-size:12px;color:#444}
+    .foot{position:relative;margin-top:20px;border-top:1px dashed #ddd;padding-top:6px;font-size:12px;color:#666}
+    @media print{
+      .page{box-shadow:none;margin:0}
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="header">
+      <div class="title">
+        <h1>MJX157 — 概念草圖作品集</h1>
+        <div class="lead">把想法畫成可點擊的互動實驗</div>
+      </div>
+      <div class="meta">聯絡：you@example.com</div>
+    </div>
+
+    <img class="hero-img" src="https://picsum.photos/1600/900?random=301" alt="cover">
+
+    <div class="section two-col">
+      <div class="col">
+        <h3>DreamWander（夢遊器）</h3>
+        <p class="meta">角色：概念設計、互動原型、視覺設計</p>
+        <p class="small">簡介：以夢境走失為主題，採手繪語彙與可互動原型。挑戰是保持可用性同時保留草圖趣味；解法是使用高對比操作按鈕與草圖式輔助視覺。</p>
+      </div>
+      <div class="col">
+        <h4>技術</h4>
+        <ul>
+          <li>Figma 原型</li>
+          <li>HTML / CSS / JS（互動示意）</li>
+          <li>Lottie 動畫（示意）</li>
+        </ul>
+        <h4>成果</h4>
+        <p class="small">使用者測試正向反饋、社群展演吸引互動</p>
+      </div>
+    </div>
+
+    <div class="foot">
+      本檔案為範例 PDF 版，圖片與數據為示意。可直接在瀏覽器開啟本頁（或另存為 PDF）作為可列印版本。
+    </div>
+  </div>
+</body>
+</html>
